@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+		font-family: "Poppins", sans-serif;
+	}
+}
+
+:root {
+	--dark: #1b1e24;
+	--extraDark: #121418;
+	--darkGreen: #095f59;
+	--paleGreen: #0c766f;
+	--paleBrown: #ffd681;
+	--palePurple: #c89aff;
+	--paleRed: #fa7565;
+	--paleBlue: #4b9fff;
+}
+
+.dark {
+	@apply bg-dark text-zinc-50 ;
+}
+
+.light {
+	@apply text-dark bg-zinc-50;
+}
+
+.logo-circle {
+	animation: scaleCircle 2s infinite alternate;
+}
+
+@keyframes scaleCircle {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.box {
+	@apply rounded-xl;
+}
+
+/* .parent-grid {
+	display: flex;
+}
+@media screen and (min-width: 768px) {
+	.parent-grid {
+	}
+}
+
+.child-box {
+	height: 100%;
+} */
+
+.box-one {
+	background-image: url("/src/assets/spinner.svg");
+	background-repeat: no-repeat;
+	background-position: top 5px left 10px;
+	background-size: 80px;
+}
+
+.secure {
+	background-image: url("/src/assets/noun-secure-2634890.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 70%;
+	background-size: 55%;
+}
