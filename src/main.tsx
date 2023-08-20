@@ -5,10 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import ErrorPage from "./pages/Error.tsx";
-import Dashboard from "./pages/dashboard/Dashboard.tsx";
-import Notes from "./pages/dashboard/Notes.tsx";
-import Favourite from "./pages/dashboard/Favourite.tsx";
-import Analytics from "./pages/dashboard/Analytics.tsx";
+import Work from "./pages/Work.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -17,22 +14,9 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 	},
 	{
-		path: "/dashboard",
-		element: <Dashboard />,
-		children: [
-			{
-				path: "/dashboard/notes",
-				element: <Notes />,
-			},
-			{
-				path: "/dashboard/favourites",
-				element: <Favourite />,
-			},
-			{
-				path: "/dashboard/analytics",
-				element: <Analytics />,
-			},
-		],
+		path: "/works",
+		element: <Work/>,
+		errorElement: <ErrorPage />,
 	},
 ]);
 

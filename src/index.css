@@ -20,10 +20,17 @@
 }
 
 .dark {
-	@apply bg-dark text-zinc-50 ;
+	@apply bg-dark text-zinc-50;
 }
 
 .light {
+	@apply text-dark bg-zinc-50;
+}
+
+.light .foot-hub {
+	@apply bg-dark text-zinc-50;
+}
+.dark .foot-hub {
 	@apply text-dark bg-zinc-50;
 }
 
@@ -58,17 +65,3 @@
 .child-box {
 	height: 100%;
 } */
-
-.box-one {
-	background-image: url("/src/assets/spinner.svg");
-	background-repeat: no-repeat;
-	background-position: top 5px left 10px;
-	background-size: 80px;
-}
-
-.secure {
-	background-image: url("/src/assets/noun-secure-2634890.svg");
-	background-repeat: no-repeat;
-	background-position: 50% 70%;
-	background-size: 55%;
-}

@@ -16,11 +16,20 @@ export default function Hero() {
 						front-end
 						<br className="min-[490px]:hidden" /> developer
 					</h1>
-					<p className="opacity-80">
-						A software developer based in Lagos, Nigeria. Some
-						times, I use water, keystrokes and algorithms to solve
-						problems. Other times, I use code to build bridges
-						between people and technology.
+					<p>
+						<span className="opacity-80">I am</span>{" "}
+						<span className="bg-paleBrown px-3 rounded-full font-semibold inline-flex items-center gap-2 w-max cursor-pointer text-dark opacity-100 capitalize">
+							oluwatimilehin awoniyi
+							<i className="bx bxs-volume-full"></i>
+						</span>{" "}
+						<span className="opacity-80">
+							a Frontend Developer proficient with React
+							and Svelte to create responsive UI components and
+							optimizing performance for handling large datasets.
+							Most times, I use water, keystrokes and algorithms
+							to solve problems. Other times, I use code to build
+							bridges between people and technology.
+						</span>
 					</p>
 				</div>
 			</div>
