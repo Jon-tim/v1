@@ -41,7 +41,10 @@
 }
 
 .filter-item {
-	@apply capitalize w-max opacity-80 cursor-pointer;
+	@apply capitalize w-max opacity-80 cursor-pointer py-1 px-2 rounded border;
+}
+.filter-item.active{
+	@apply bg-paleBlue text-dark border-paleBlue;
 }
 
 .dark .project {
@@ -59,7 +62,7 @@
 }
 
 .project {
-	height: 250px;
+	height: 200px;
 	width: 100%;
 	cursor: zoom-in;
 }

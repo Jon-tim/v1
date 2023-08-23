@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import idea from "../../assets/noun-brain-idea-3749747.svg";
+import ContactLinks from "./ContactLinks";
 
 export default function HeroGrid() {
 	return (
@@ -44,24 +45,9 @@ export default function HeroGrid() {
 				</div>
 				<div className="md:w-[20%] h-[200px] child-box box box-3 w-full flex gap-4 items-center md:h-[400px] md:flex-col text-dark">
 					<div className="box-one flex items-center justify-center text-left p-5 h-full w-full box bg-paleBrown md:h-[70%] text-4xl text-dark gap-6 flex-wrap">
-						<Link to="https://github.com/Jon-tim">
-							<i className="bx bxl-github"></i>
-						</Link>
-
-						<Link to="https://twitter.com/OxTimilehin">
-							<i className="bx bxl-twitter"></i>
-						</Link>
-
-						<Link to="https://www.linkedin.com/in/oluwatimilehin-awoniyi/">
-							<i className="bx bxl-linkedin"></i>
-						</Link>
-
-						<Link to="mailto:awoniyitimi@outlook.com">
-							<i className="bx bxl-gmail"></i>
-						</Link>
+						<ContactLinks />
 					</div>
 					<div className="box p-5 h-full w-full flex items-center justify-center bg-palePurple md:h-[30%] secure">
-						{/* <i className="bx bxs-contact text-7xl text-dark"></i> */}
 						<p className="text-dark font-semibold text-3xl capitalize">
 							contact
 						</p>
