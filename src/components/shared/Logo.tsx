@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function Logo() {
 	return (
-		<div className="cursor-pointer flex items-center gap-2">
+		<Link
+			to="/"
+			className="cursor-pointer flex items-center gap-2"
+		>
 			{/* <svg
 				id="logo"
 				xmlns="http://www.w3.org/2000/svg"
@@ -25,6 +30,6 @@ export default function Logo() {
 			<h1 className="text-xl capitalize font-bold text-paleGreen">
 				oluwa<span className="text-paleRed">timilehin</span>
 			</h1>
-		</div>
+		</Link>
 	);
 }

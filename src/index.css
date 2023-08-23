@@ -20,17 +20,19 @@
 }
 
 .dark {
-	@apply bg-dark text-zinc-50;
+	@apply bg-dark text-zinc-50 border-white/80;
 }
 
 .light {
-	@apply text-dark bg-zinc-50;
+	@apply text-dark bg-zinc-50 border-dark;
 }
 
-.light .foot-hub {
+.light .foot-hub,
+.light .filter {
 	@apply bg-dark text-zinc-50;
 }
-.dark .foot-hub {
+.dark .foot-hub,
+.dark .filter {
 	@apply text-dark bg-zinc-50;
 }
 
@@ -38,15 +40,39 @@
 	animation: scaleCircle 2s infinite alternate;
 }
 
-@keyframes scaleCircle {
-	0% {
-		opacity: 1;
+.filter-item {
+	@apply capitalize w-max opacity-80 cursor-pointer;
+}
+
+.dark .project {
+	@apply text-zinc-50 bg-white/10;
+}
+.light .project {
+	@apply bg-dark/10 text-dark;
+}
+
+.work-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.project {
+	flex: 1 1 1;
+	height: 200px;
+	width: 100%;
+	cursor: zoom-in;
+}
+@media screen and (min-width: 480px) {
+	.project {
+		width: 200px;
 	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
+}
+@media screen and (min-width: 700px) {
+	.project {
+		width: 300px;
+		height: 300px;
 	}
 }
 
