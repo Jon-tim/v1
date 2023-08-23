@@ -52,42 +52,18 @@
 }
 
 .work-grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-row-gap: 1rem;
+	grid-column-gap: 1rem;
 }
 
 .project {
-	flex: 1 1 1;
-	height: 200px;
+	height: 250px;
 	width: 100%;
 	cursor: zoom-in;
-}
-@media screen and (min-width: 480px) {
-	.project {
-		width: 200px;
-	}
-}
-@media screen and (min-width: 700px) {
-	.project {
-		width: 300px;
-		height: 300px;
-	}
 }
 
 .box {
 	@apply rounded-xl;
 }
-
-/* .parent-grid {
-	display: flex;
-}
-@media screen and (min-width: 768px) {
-	.parent-grid {
-	}
-}
-
-.child-box {
-	height: 100%;
-} */
