@@ -5,7 +5,7 @@ type dataType = {
 	id: string;
 	src: string;
 	name: string;
-	details?: string;
+	details: string;
 	category: string;
 };
 
@@ -23,7 +23,7 @@ export default function DialogModal({ project }: DialogModalProps) {
 						className="flex justify-between items-center
 						 mb-4"
 					>
-						<Dialog.Title className="DialogTitle text-lg font-semibold capitalize">
+						<Dialog.Title className="DialogTitle text-lg font-semibold capitalize md:text-xl">
 							{project.name}
 						</Dialog.Title>
 						<Dialog.Close asChild>
@@ -35,8 +35,10 @@ export default function DialogModal({ project }: DialogModalProps) {
 							</button>
 						</Dialog.Close>
 					</div>
-					<Dialog.Description className="DialogDescription text-sm  opacity-80 ">
-						{project.details}
+					<Dialog.Description className="DialogDescription text-sm  opacity-80 md:text-base">
+						{project.details.split("\n").map((paragraph, index) => (
+							<p key={index}>{paragraph}</p>
+						))}
 					</Dialog.Description>
 					<Link
 						to={project.src}

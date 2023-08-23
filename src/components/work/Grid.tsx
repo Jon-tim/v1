@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { fetchData } from "../../config/firebase";
+import { useState } from "react";
 import GridCard from "./GridCard";
 import * as Dialog from "@radix-ui/react-dialog";
 import DialogModal from "./Dialog";
@@ -7,21 +6,18 @@ type dataType = {
 	id: string;
 	src: string;
 	name: string;
-	details?: string;
+	details: string;
 	category: string;
 };
 
-export default function Grid() {
+type GridProps = {
+	links: dataType[];
+};
+
+export default function Grid({ links }: GridProps) {
 	const [selectedProject, setSelectedProject] = useState<dataType | null>(
 		null
 	);
-	const [links, setlinks] = useState<dataType[]>([]);
-	useEffect(() => {
-		fetchData().then((data) => {
-			setlinks(data);
-			// console.log(data);
-		});
-	}, []);
 
 	const openModal = (project: dataType) => {
 		setSelectedProject(project);
@@ -36,13 +32,9 @@ export default function Grid() {
 					</p>
 				) : (
 					links.map((item) => (
-						<Dialog.Trigger>
-							<div
-								key={item.id}
-								onClick={() => openModal(item)}
-							>
+						<Dialog.Trigger key={item.id}>
+							<div onClick={() => openModal(item)}>
 								<GridCard
-									key={item.id}
 									name={item.name}
 									category={item.category}
 								/>
