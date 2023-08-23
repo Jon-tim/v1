@@ -20,7 +20,7 @@ export default function Hero() {
 					</p>
 				</span>
 				<div className="text-center flex flex-col items-center gap-8">
-					<h1 className="text-5xl font-bold">
+					<h1 className="text-5xl font-bold md:text-6xl">
 						front-end
 						<br className="min-[490px]:hidden" /> developer
 					</h1>
