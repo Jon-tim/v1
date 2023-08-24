@@ -29,6 +29,7 @@ export default function ContactLinks() {
 				<Link
 					key={item.id}
 					to={item.to}
+					target="_blank"
 				>
 					<i
 						className={`transition-colors duration-300  hover:text-paleRed bx ${item.icon}`}
