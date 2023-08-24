@@ -35,11 +35,15 @@ export default function DialogModal({ project }: DialogModalProps) {
 							</button>
 						</Dialog.Close>
 					</div>
-					<Dialog.Description className="DialogDescription text-sm  opacity-80 md:text-base">
-						{project.details.split("\n").map((paragraph, index) => (
-							<p key={index}>{paragraph}</p>
-						))}
-					</Dialog.Description>
+					{/* {project.details.map((paragraph, index) => ( */}
+					<Dialog.Description
+						// key={index}
+						className="DialogDescription text-sm  opacity-80 md:text-base"
+						dangerouslySetInnerHTML={{
+							__html: project.details,
+						}}
+					/>
+					{/* ))} */}
 					<Link
 						to={project.src}
 						target="_blank"
