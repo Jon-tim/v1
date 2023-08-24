@@ -62,8 +62,8 @@ export default function Hero() {
 							className="hidden"
 						>
 							<source
-								src="/src/assets/name.mp3"
-								type="audio/mp3"
+								src="/src/assets/name.wav"
+								type="audio/wav"
 							/>
 							Your browser does not support the audio element.
 						</audio>
