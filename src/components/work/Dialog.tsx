@@ -2,7 +2,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { Link } from "react-router-dom";
 
 type dataType = {
-	id: string;
+	id: number;
 	src: string;
 	name: string;
 	details: string;

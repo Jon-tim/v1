@@ -4,7 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import DialogModal from "./Dialog";
 import { motion, AnimatePresence } from "framer-motion";
 type dataType = {
-	id: string;
+	id: number;
 	src: string;
 	name: string;
 	details: string;

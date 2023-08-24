@@ -1,0 +1,58 @@
+[
+	{
+		"id": 1,
+		"src": "https://github.com/Jon-tim/printf",
+		"name": "printf()",
+		"category": "c",
+		"details": "This is a collaborative project where a function that produces output according to a format was created. It handles the following custom conversion specifiers: b: the unsigned int argument is converted to binary. It also handles the following conversion specifiers: u o x X S; Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \\x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)"
+	},
+	{
+		"id": 2,
+		"src": "https://github.com/Jon-tim/simple_shell",
+		"name": "Simple Shell",
+		"category": "c",
+		"details": "This project is an implementation of the shell created as a Milestone Project for the C code at ALX Africa Software Engineering. The shell is a project in the first trimester, that helps student to understand the advanced concepts behind the shell program include process, system call, bit manipulation, file management, error handling etc.... Shell is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh). This program was written entirely in C Language."
+	},
+	{
+		"id": 3,
+		"src": "https://jon-tim.github.io/Crowdfund/",
+		"name": "crowdfund",
+		"category": "html/css",
+		"details": "Crowdfund is a simple platform that streamlines the fundraising process for a specific product. With its clean and intuitive design, it seamlessly directs attention to the product's unique features and funding goal. Backers are enticed to participate through various contribution tiers, each offering distinct rewards or perks that incentivize larger contributions"
+	},
+	{
+		"id": 4,
+		"src": "https://countries-catalogue.vercel.app/",
+		"name": "Countries Catalogue",
+		"category": "svelte",
+		"details": "Countries' Catalogue is a comprehensive platform that offers up-to-date information about every country across the globe. This user-friendly platform serves as a hub for accessing a wealth of data related to different countries, providing users with valuable insights at their fingertips."
+	},
+	{
+		"id": 5,
+		"src": "https://jon-tim.github.io/Shortly-App/",
+		"name": "shortly",
+		"category": "html/css",
+		"details": "Shortly App is a responsive web application designed to simplify and condense long URLs into short, shareable links. Built using HTML, CSS, and JavaScript, this application streamlines the process of creating compact links, making it easier to share resources across the internet"
+	},
+	{
+		"id": 6,
+		"src": "https://jon-tim.github.io/HourGlance/",
+		"name": "hourGlance",
+		"category": "html/css",
+		"details": "This was my very first attempt at a dashboard using HTML/CSS/JS. Note, it is not responsive as I got only the desktop size and I was only excited about stringing complex things on dashboard together. For me, dashboards went on to become some of the fascinating projects to do."
+	},
+	{
+		"id": 7,
+		"src": "https://audiophile-82q6ru5ws-jon-tim.vercel.app/",
+		"name": "Audiophile",
+		"category": "svelte",
+		"details": "Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products."
+	},
+	{
+		"id": 8,
+		"src": "http://sneakers-fawn.vercel.app/",
+		"name": "Sneakers",
+		"category": "react",
+		"details": "The project is centered on building out an e-commerce product page and get it looking as close to the design as possible."
+	}
+]

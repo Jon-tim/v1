@@ -3,10 +3,9 @@ import Nav from "../components/home/Nav";
 import Filter from "../components/work/Filter";
 import Grid from "../components/work/Grid";
 import Work_Intro from "../components/work/Work_Intro";
-import { fetchData } from "../config/firebase";
-
+import data from "../data/data.json";
 type dataType = {
-	id: string;
+	id: number;
 	src: string;
 	name: string;
 	details: string;
@@ -16,11 +15,10 @@ export default function Work() {
 	const [activeCategory, setActiveCategory] = useState("all");
 	const [links, setlinks] = useState<dataType[]>([]);
 	useEffect(() => {
-		fetchData().then((data) => {
-			setlinks(data);
-		});
+		setlinks(data);
 	}, []);
 
+	// console.log(data);
 	const categories: string[] = [
 		"all",
 		"html/css",
