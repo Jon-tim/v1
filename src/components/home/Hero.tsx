@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Footer from "./Footer";
 import HeroGrid from "./Hero-Grid";
+import { motion } from "framer-motion";
 
 export default function Hero() {
 	const audioRef = useRef<HTMLAudioElement>(null);
@@ -13,18 +14,42 @@ export default function Hero() {
 	return (
 		<section className="mt-12 md:mt-16 flex flex-col gap-10">
 			<div className="text-center flex flex-col items-center max-w-2xl mx-auto gap-4">
-				<span className="flex items-center gap-2 bg-paleBrown px-4 py-1 rounded-full text-dark">
+				<motion.span
+					initial={{ opacity: 0, y: -10 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{
+						ease: "linear",
+						delay: 1,
+						type: "spring",
+						stiffness: 100,
+						y: { duration: .8 },
+					}}
+					className="flex items-center gap-2 bg-paleBrown px-4 py-1 rounded-full text-dark"
+				>
 					<i className="bx bx-info-circle text-paleRed"></i>
 					<p className="text-xs font-semibold ">
 						currently open for a frontend role
 					</p>
-				</span>
+				</motion.span>
 				<div className="text-center flex flex-col items-center gap-8">
-					<h1 className="text-5xl font-bold md:text-6xl">
+					<motion.h1
+						initial={{ opacity: 0, y: 10 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 0.6,
+							delay: 0.5,
+							ease: "linear",
+						}}
+						className="text-5xl font-bold md:text-6xl"
+					>
 						front-end
 						<br className="min-[490px]:hidden" /> developer
-					</h1>
-					<p>
+					</motion.h1>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: .8, delay: 1 }}
+					>
 						<span className="opacity-80">I am</span>{" "}
 						<span
 							onClick={playAudio}
@@ -50,7 +75,7 @@ export default function Hero() {
 							technology. I apply logical thinking, algorithms,
 							and creativity to problem-solving.
 						</span>
-					</p>
+					</motion.p>
 				</div>
 			</div>
 			<HeroGrid />

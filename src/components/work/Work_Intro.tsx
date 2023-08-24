@@ -1,8 +1,13 @@
-
+import { motion } from "framer-motion";
 export default function Work_Intro() {
 	return (
 		<>
-			<div className="box bg-paleBrown text-dark my-4 p-4">
+			<motion.div
+				initial={{ y: -10, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.5 }}
+				className="box bg-paleBrown text-dark my-4 p-4"
+			>
 				<h1 className="text-2xl capitalize font-semibold pb-4">
 					projects
 				</h1>
@@ -28,7 +33,7 @@ export default function Work_Intro() {
 						projects.
 					</p>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 }

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 
 interface FilterProps {
 	categories: string[];
@@ -5,9 +6,18 @@ interface FilterProps {
 	onCategoryChange: (category: string) => void;
 }
 
-export default function Filter({ categories, activeCategory, onCategoryChange }: FilterProps) {
+export default function Filter({
+	categories,
+	activeCategory,
+	onCategoryChange,
+}: FilterProps) {
 	return (
-		<aside className="my-8 flex gap-4 items-center">
+		<motion.aside
+			initial={{ y: -5, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
+			transition={{ duration: .6, delay:.5 }}
+			className="my-8 flex gap-4 items-center"
+		>
 			<p className="rounded filter py-1 px-2 capitalize w-max font-semibold ">
 				filter:
 			</p>
@@ -24,6 +34,6 @@ export default function Filter({ categories, activeCategory, onCategoryChange }:
 					</button>
 				))}
 			</div>
-		</aside>
+		</motion.aside>
 	);
 }
