@@ -64,7 +64,7 @@ export default function Hero() {
 						>
 							<source
 								src={namePronunciation}
-								type="audio/wav"
+								type="audio/mpeg"
 							/>
 							Your browser does not support the audio element.
 						</audio>
