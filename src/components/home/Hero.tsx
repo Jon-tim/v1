@@ -18,7 +18,6 @@ export default function Hero() {
 					initial={{ opacity: 0, y: -10 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{
-						ease: "linear",
 						delay: 1,
 						type: "spring",
 						stiffness: 100,
