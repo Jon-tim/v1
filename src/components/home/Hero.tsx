@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Footer from "./Footer";
 import HeroGrid from "./Hero-Grid";
 import { motion } from "framer-motion";
+import namePronunciation from "../../assets/name.mp3";
 
 export default function Hero() {
 	const audioRef = useRef<HTMLAudioElement>(null);
@@ -21,7 +22,7 @@ export default function Hero() {
 						delay: 1,
 						type: "spring",
 						stiffness: 100,
-						y: { duration: .8 },
+						y: { duration: 0.8 },
 					}}
 					className="flex items-center gap-2 bg-paleBrown px-4 py-1 rounded-full text-dark"
 				>
@@ -47,7 +48,7 @@ export default function Hero() {
 					<motion.p
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: .8, delay: 1 }}
+						transition={{ duration: 0.8, delay: 1 }}
 					>
 						<span className="opacity-80">I am</span>{" "}
 						<span
@@ -62,7 +63,7 @@ export default function Hero() {
 							className="hidden"
 						>
 							<source
-								src="/src/assets/name.wav"
+								src={namePronunciation}
 								type="audio/wav"
 							/>
 							Your browser does not support the audio element.
