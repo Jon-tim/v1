@@ -12,7 +12,7 @@ type dataType = {
 	category: string;
 };
 export default function Work() {
-	const [activeCategory, setActiveCategory] = useState("all");
+	const [activeCategory, setActiveCategory] = useState("web apps");
 	const [links, setlinks] = useState<dataType[]>([]);
 	useEffect(() => {
 		setlinks(data);
@@ -22,8 +22,7 @@ export default function Work() {
 	const categories: string[] = [
 		"all",
 		"html/css",
-		"react",
-		"svelte",
+		"web apps",
 		"c",
 		// "python",
 	];

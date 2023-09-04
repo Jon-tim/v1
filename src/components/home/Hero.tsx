@@ -69,8 +69,8 @@ export default function Hero() {
 							Your browser does not support the audio element.
 						</audio>
 						<span className="opacity-80">
-							a Frontend Developer proficient in JavaScript (React
-							and Svelte). I specialize in creating responsive UI
+							a Software Developer proficient in JavaScript
+							. I specialize in creating responsive UI
 							components and using code to connect people and
 							technology. I apply logical thinking, algorithms,
 							and creativity to problem-solving.

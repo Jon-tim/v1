@@ -24,7 +24,7 @@
 		"id": 4,
 		"src": "https://countries-catalogue.vercel.app/",
 		"name": "Countries Catalogue",
-		"category": "svelte",
+		"category": "web apps",
 		"details": "Countries' Catalogue is a comprehensive platform that offers up-to-date information about every country across the globe.<br /><br />This user-friendly platform serves as a hub for accessing a wealth of data related to different countries, providing users with valuable insights at their fingertips."
 	},
 	{
@@ -39,20 +39,20 @@
 		"src": "https://jon-tim.github.io/HourGlance/",
 		"name": "hourGlance",
 		"category": "html/css",
-		"details": "This was my very first attempt at a dashboard using HTML/CSS/JS.<br /><br />Note, it is not responsive as I got only the desktop size and I was only excited about stringing complex things on dashboard together.<br /><br />For me, dashboards went on to become some of the fascinating projects to do."
+		"details": "This was my very first attempt at a dashboard using HTML/CSS/JS.<br /><br />NOTE: it is not responsive as I got only the desktop size and I was only excited about stringing complex things on dashboard together.<br /><br />For me, dashboards went on to become some of the fascinating projects to do."
 	},
 	{
 		"id": 7,
 		"src": "https://audiophile-82q6ru5ws-jon-tim.vercel.app/",
 		"name": "Audiophile",
-		"category": "svelte",
+		"category": "web apps",
 		"details": "Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories.<br /><br />We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products."
 	},
 	{
 		"id": 8,
 		"src": "http://sneakers-fawn.vercel.app/",
 		"name": "Sneakers",
-		"category": "react",
+		"category": "web apps",
 		"details": "The project is centered on building out an e-commerce product page and get it looking as close to the design as possible."
 	}
 ]
