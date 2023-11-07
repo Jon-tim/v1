@@ -28,7 +28,7 @@ export default function Hero() {
 				>
 					<i className="bx bx-info-circle text-paleRed"></i>
 					<p className="text-xs font-semibold ">
-						currently open for a frontend role
+						currently open for a software engineering role
 					</p>
 				</motion.span>
 				<div className="text-center flex flex-col items-center gap-8">
@@ -40,10 +40,10 @@ export default function Hero() {
 							delay: 0.5,
 							ease: "linear",
 						}}
-						className="text-5xl font-bold md:text-6xl"
+						className="text-5xl font-bold md:text-6xl capitalize"
 					>
-						front-end
-						<br className="min-[490px]:hidden" /> developer
+						software
+						<br className="min-[490px]:hidden" /> engineer
 					</motion.h1>
 					<motion.p
 						initial={{ opacity: 0, y: 20 }}
@@ -69,9 +69,8 @@ export default function Hero() {
 							Your browser does not support the audio element.
 						</audio>
 						<span className="opacity-80">
-							a Software Developer proficient in JavaScript
-							. I specialize in creating responsive UI
-							components and using code to connect people and
+							a Software engineer proficient in python and JavaScript
+							. I specialize in creating responsive software solutions and using code to connect people and
 							technology. I apply logical thinking, algorithms,
 							and creativity to problem-solving.
 						</span>

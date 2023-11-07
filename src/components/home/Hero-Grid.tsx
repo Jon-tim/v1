@@ -53,7 +53,7 @@ export default function HeroGrid() {
 					<div className=" h-full w-full text-center flex flex-col gap-3 text-dark pt-8">
 						<p className="text-xl font-semibold">
 							I am interested in the application of IoTs in the
-							fields of Education and Agriculture in Africa
+							fields of Education and Agriculture
 						</p>
 					</div>
 					<div className="w-[500px] absolute -bottom-[320px] left-1/2 translate-x-[-50%]">
